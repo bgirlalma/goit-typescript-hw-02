@@ -2,6 +2,17 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
+type PageInfoOne = {
+  title: string,
+  likes: number,
+  accounts: ('Max' | 'Anton' | 'Nikita') [],
+  status: string,
+  details?: {
+    createAt: Date,
+    updateAt: Date,
+  }
+}
+
 const page1 = {
   title: 'The awesome page',
   likes: 100,
@@ -11,6 +22,13 @@ const page1 = {
     createAt: new Date('2021-01-01'),
     updateAt: new Date('2021-05-01'),
   }
+}
+
+type PageInfoTwo = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: string
 }
 
 const page2 = {
