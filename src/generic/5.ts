@@ -4,8 +4,11 @@
 */
 
 interface KeyValuePair {
-  key;
-  value;
+  key: number;
+  value: string;
 }
 
+class KeyValueComponent<T extends KeyValuePair>{
+  constructor(private keyValue: T){}
+}
 export {};
