@@ -5,8 +5,8 @@
 type PageInfoOne = {
   title: string,
   likes: number,
-  accounts: ('Max' | 'Anton' | 'Nikita') [],
-  status: string,
+  accounts: string[],
+  status: 'open',
   details?: {
     createAt: Date,
     updateAt: Date,
@@ -28,7 +28,7 @@ type PageInfoTwo = {
   title: string,
   likes: number,
   accounts: string[],
-  status: string
+  status: 'close',
 }
 
 const page2 = {
